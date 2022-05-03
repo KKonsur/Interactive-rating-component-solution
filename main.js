@@ -5,7 +5,7 @@ let isChecked = false
 
 ratingScore.forEach(element => {
     element.addEventListener('click', e => {
-        isChecked = !isChecked
+        isChecked = true
         ratingScore.forEach(element => element.classList.remove('ratingBox__ratingScore--active'))
         element.classList.add('ratingBox__ratingScore--active')
         resultValue = e.target.textContent
