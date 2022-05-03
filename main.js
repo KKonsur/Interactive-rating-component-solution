@@ -1,5 +1,4 @@
 const ratingScore = document.querySelectorAll('.ratingBox__ratingScore')
-const ratingScoreX = document.querySelector('.ratingBox__ratingScore--active')
 const submitScore = document.querySelector('.ratingBox__submitButton')
 let resultValue
 let isChecked = false
