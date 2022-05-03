@@ -1,0 +1,78 @@
+.ratingBox {
+   display: flex;
+   flex-direction: column;
+   width: 400px;
+   padding: 30px;
+   border-radius: 30px;
+   background: rgb(37, 45, 55);
+   background: linear-gradient(0deg, hsl(213, 20%, 18%) 0%, hsl(213, 20%, 20%) 90%, hsl(213, 20%, 22%) 100%);
+
+   &__starContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: hsl(213, 20%, 24%);
+      border-radius: 50%;
+      margin-bottom: 20px;
+   }
+
+   &__mainText {
+      margin-bottom: 15px;
+   }
+
+   &__paragraph {
+      color: $medium-grey;
+      line-height: 20px;
+      margin-bottom: 20px;
+   }
+
+   &__ratingScoresContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+   }
+
+   &__ratingScore {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: hsl(213, 20%, 24%);
+      border-radius: 50%;
+      border: none;
+      color: $medium-grey;
+      cursor: pointer;
+      transition: 0.1s;
+
+      &:hover {
+         background-color: $orange;
+         color: $white;
+      }
+
+      &--active {
+         background-color: $ligh-grey;
+         color: $white;
+      }
+   }
+
+   &__submitButton {
+      background-color: $orange;
+      padding: 10px;
+      border: none;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 5px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.1s;
+
+      &:hover {
+         color: $orange;
+         background-color: $white;
+      }
+   }
+}

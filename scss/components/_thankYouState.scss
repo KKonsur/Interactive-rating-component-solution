@@ -1,0 +1,33 @@
+.thankYouState {
+   position: absolute;
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   width: 400px;
+   padding: 30px;
+   border-radius: 30px;
+   background: rgb(37, 45, 55);
+   background: linear-gradient(0deg, hsl(213, 20%, 18%) 0%, hsl(213, 20%, 20%) 90%, hsl(213, 20%, 22%) 100%);
+
+   &--active {
+      display: flex;
+   }
+
+   &__result {
+      color: $orange;
+      background-color: hsl(213, 20%, 24%);
+      padding: 10px;
+      border-radius: 20px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+   }
+
+   &__mainText {
+      margin-bottom: 10px;
+   }
+
+   &__paragraph {
+      color: $ligh-grey;
+      text-align: center;
+   }
+}
